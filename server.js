@@ -17,8 +17,9 @@ router.get('/',function(req,res){
 // });
 
 // serve static files
-app.use(express.static('images'));
-app.use(express.static('videos'));
+// app.use(express.static('images'));
+// app.use(express.static('videos'));
+app.use(express.static('.'));
 
 //add the router
 app.use('/', router);
